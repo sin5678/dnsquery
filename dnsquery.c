@@ -267,13 +267,14 @@ int main(int argc, char **argv)
     {
         fprintf(stderr, "query count is 0 ,I will set it to 1 ! \n");
     }
-    for (idx = 0; idx < g_query_count; ++idx)
+    for (idx = 0; idx < g_query_count; )
     {
         send_dns_query_packet(argv[2]);
         if(g_send_interval)
             Sleep(g_send_interval);
-        printf("\rsend %d packets",idx);
+        printf("\rsend %d packets",++idx);
     }
+    printf("\n");
     close(g_raw_socket);
     return 0;
 }
