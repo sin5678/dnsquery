@@ -1,4 +1,5 @@
-// dns query
+// dnsquery  by sincoder
+// email:admin@sincoder.com
 //
 #include <stdio.h>
 #include <stdlib.h>
