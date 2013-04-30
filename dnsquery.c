@@ -266,6 +266,7 @@ int main(int argc, char **argv)
     if (0 == g_query_count)
     {
         fprintf(stderr, "query count is 0 ,I will set it to 1 ! \n");
+    	g_query_count = 1;
     }
     for (idx = 0; idx < g_query_count; )
     {
